@@ -1,64 +1,211 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/******* HEADER *******/
 header {
     background-color: #1F2937;
-    color: #F9FAF8;
-    display: flex;
-    flex-direction: column;
+    height: 20em;
+    color: white;
+    padding: 0 7em;
 }
 
-.header-logo {
-    font-weight: bolder;
-}
-
-header .top-bar {
+/* Navigation Bar */
+header #top-bar {
     display: flex;
-    flex-direction: row;
-    padding: 5px;
-    align-items: center;
 }
-
-header .top-bar ul {
+header ul {
     display: flex;
-    flex-direction: row;
-    margin: 0px;
     margin-left: auto;
+    list-style: none;
+}
+header ul li {
+    margin: 0em 0.5em;
     padding: 0;
 }
-
-header .top-bar li {
-    list-style: none;
-    padding: 0px 5px;
-}
-
-header .top-bar a {
-    color: #E5E7EB;
+header ul li a {
     text-decoration: none;
+    color: #E5E7EB;   
 }
 
-header .top-content {
+/* Header Content */
+header #top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0em;
+}
+/* Header Content Left */
+header #top-content #header-content-left {
+    margin: 0;
+    padding: 0;
+}
+header #top-content h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: extra bold;
+    color: #F9FaF8;
+    font-size: 2em;
+}
+header #top-content p {
+    margin: 0.7em 0em;
+    padding: 0;
+    color: #E5E7EB;
+}
+header #top-content button {
+    padding: 0.25em 2em;
+    background-color: #3882F6;
+    border-color: #3882F6;
+    color: white;
+    border-radius: 0.5em;
+    border-style: solid;
+    font-size: 1em;
+}
+/* Header Content Right */
+header #top-content #img-container {
+    background-color: rgb(108,115,124);
+    height: 10em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+}
+
+
+
+/****** MAIN CONTENT ******/
+main {
+    background-color: white;
+    height: 55em;
+    /* border: 3px dotted red; */
+}
+
+/* Random Info */
+#info {
+    background-color: white;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#info h2 {
+    font-size: 2em;
+    font-weight: extra-bold;
+    color: #1F2937;
+    margin-bottom: 0.3em;
+}
+#info #images{
     display: flex;
     flex-direction: row;
 }
+#info #images figure{
+    margin: 0;
+    padding: 1em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info #images img{
+    height: 8em;
+    width: 8em;
+    border: 0.2em solid #3882F6;
+    border-radius: 1em;
+}
+#info #images figcaption{
+    text-align: center;
+    color: #1F2937;
+    margin-top: 0.5em;
+}
 
-header .right-pane {
-    height: 50em;
+/* Quote */
+#quote {
+    background-color: #E5E7EB;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6em;
+    box-sizing: border-box;
+}
+#quote-text {
+    font-size: 2em; 
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+    padding: 0;
+    margin: 0;
+}
+#attribution{
+    font-size: 1.5em;
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 0;
+    padding-right: 1em;
+    margin: 0;
+}
+
+/* Call to Action */
+#cta {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+}
+#cta-box {
+    background-color: #3882F6;
+    height: 8em;
     width: 50em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#cta-text {
+    color: white;
+}
+#cta-text h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+#cta-text p {
+    margin: 0;
+    padding: 0;
+}
+#cta-box button {
+    padding: 0.25em 2em;
+    margin-left: 5em;
+    background-color: #3882F6;
+    border-color: white;
+    color: white;
+    border-radius: 0.5em;
+    border-style: solid;
+    font-size: 1em;
 }
 
-main {
-    background-color: #F9FAF8;
-}
 
+
+/****** FOOTER *******/
 footer {
     background-color: #1F2937;
-    color: #F9FAF8;   
-    text-align: center;
+    height: 5em;
+    color: #E5E7EB; 
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
